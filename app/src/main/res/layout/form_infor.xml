@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/infor_form"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DestinationInfor">
+<android.support.constraint.ConstraintLayout
+android:id="@+id/top_infor"
+android:layout_width="match_parent"
+android:layout_height="240sp"
+    >
+
+    <ImageView
+        android:id="@+id/image_infor"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:src="@drawable/bandaosontra"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+<ImageButton
+    android:id="@+id/favorite_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="28dp"
+    android:background="@drawable/toolbar_bg"
+    android:src="@drawable/favorite_btn"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="MissingConstraints" />
+
+<ImageButton
+    android:id="@+id/back_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="28dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/toolbar_bg"
+    android:src="@drawable/back_btn"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>
+<LinearLayout
+android:layout_marginTop="30dp"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/top_infor"
+android:orientation="vertical"
+    >
+<TextView
+    android:id="@+id/title_infor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Title"
+    android:textColor="#000"
+    android:textSize="50sp"
+    android:gravity="center"
+    />
+<TextView
+    android:id="@+id/txtinfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="aloaloa"
+    android:textSize="25sp"
+    android:textColor="#000"
+    android:paddingLeft="30sp"/>
+</LinearLayout>
+
+</RelativeLayout>
